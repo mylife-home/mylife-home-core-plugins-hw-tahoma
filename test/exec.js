@@ -10,11 +10,14 @@ const con = new Connection({
 
 con.once('devicesRefresh', () => {
   const dev = new Device({ label : 'CH1 (bureau)'}, con);
-  dev.on('stateChanged', () => console.log(dev.states));
-  dev.execute('setClosure', [40], null, (err) => { console.log(err || 'done'); });
+  dev.on('onlineChanged', () => console.log('onlineChanged', dev.online));
+  dev.on('stateChanged', () => console.log('stateChanged', dev.states));
+  dev.on('executingChanged', () => console.log('executingChanged', dev.executing));
+
+  dev.execute('setClosure', [40], (err) => { console.log(err || 'done'); });
 });
 
-//con.on('logged', (value) => console.log('logged', value));
+//con.on('loggedChanged', (value) => console.log('loggedChanged', value));
 //con.on('stateChanged', (device, states) => console.log('stateChanged', device, states));
 
 /*
