@@ -10,7 +10,8 @@ const con = new Connection({
 
 con.once('devicesRefresh', () => {
   const dev = new Device({ label : 'CH1 (bureau)'}, con);
-  dev.execute('open', null, null, (err) => { console.log(err || 'done'); });
+  dev.on('stateChanged', () => console.log(dev.states));
+  dev.execute('setClosure', [40], null, (err) => { console.log(err || 'done'); });
 });
 
 //con.on('logged', (value) => console.log('logged', value));
@@ -20,6 +21,7 @@ con.once('devicesRefresh', () => {
 volet roulant
 
 commands: [{name: "open", parameters: []}]
+commands: [{name: "close", parameters: []}]
 commands: [{name: "setClosure", parameters: [17]}] => (17%)
 
 states : core:ClosureState
