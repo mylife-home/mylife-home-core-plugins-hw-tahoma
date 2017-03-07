@@ -1,0 +1,22 @@
+{
+  "name": "mylife-home-core-plugins-hw-tahoma",
+  "version": "0.0.1",
+  "description": "Mylife Home Core Plugin: HW Tahoma",
+  "main": "index.js",
+  "repository": "https://github.com/vincent-tr/mylife-home-core-plugins-hw-tahoma",
+  "author": "Vincent Trumpff",
+  "dependencies": {
+    "epoll": "*",
+    "log4js": "*",
+    "polling-to-event": "^2.0.2",
+    "request": "^2.80.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "jshint": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.js"
+  }
+}
