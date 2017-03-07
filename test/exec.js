@@ -7,3 +7,6 @@ const con = new Connection({
   password: process.argv[3]
 });
 
+con.on('logged', (value) => console.log('logged', value));
+con.on('stateChanged', (device, states) => console.log('stateChanged', device, states));
+
