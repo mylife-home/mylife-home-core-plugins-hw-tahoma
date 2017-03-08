@@ -1,7 +1,6 @@
 'use strict';
 
-const Connection = require('../lib/service/connection');
-const Device = require('../lib/service/device');
+const { Connection, Device } = require('../lib/service/');
 
 const con = new Connection({
   user: process.argv[2],
