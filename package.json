@@ -8,7 +8,7 @@
   "dependencies": {
     "epoll": "*",
     "log4js": "*",
-    "polling-to-event": "^2.0.2",
+    "polling-to-event": "vincent-tr/node-polling-to-event",
     "request": "^2.80.0"
   },
   "devDependencies": {
