@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-//  AcButton : require('./lib/ac-button'),
+  Box           : require('./lib/box'),
+  RollerShutter : require('./lib/roller-shutter'),
 };
