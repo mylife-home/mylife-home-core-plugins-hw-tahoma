@@ -16,8 +16,9 @@ con.once('devicesRefresh', () => {
   dev.execute('setClosure', [40], (err) => { console.log(err || 'done'); });
 });
 
-//con.on('loggedChanged', (value) => console.log('loggedChanged', value));
-//con.on('stateChanged', (device, states) => console.log('stateChanged', device, states));
+// con.on('loggedChanged', (value) => console.log('loggedChanged', value));
+// con.on('deviceStateChanged', (device, states) => console.log('deviceStateChanged', device, states));
+// con.on('execStateChanged', (device, event) => console.log('execStateChanged', device, event));
 
 /*
 volet roulant

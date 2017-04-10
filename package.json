@@ -6,6 +6,7 @@
   "repository": "https://github.com/vincent-tr/mylife-home-core-plugins-hw-tahoma",
   "author": "Vincent Trumpff",
   "dependencies": {
+    "async": "^2.3.0",
     "epoll": "*",
     "log4js": "*",
     "polling-to-event": "vincent-tr/node-polling-to-event",
