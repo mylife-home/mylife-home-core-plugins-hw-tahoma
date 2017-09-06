@@ -9,7 +9,7 @@
     "async": "^2.3.0",
     "epoll": "*",
     "log4js": "*",
-    "polling-to-event": "vincent-tr/node-polling-to-event",
+    "polling-to-event": "*",
     "request": "^2.80.0"
   },
   "devDependencies": {
