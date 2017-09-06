@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Mylife Home Core Plugin: HW Tahoma",
   "main": "index.js",
-  "repository": "https://github.com/vincent-tr/mylife-home-core-plugins-hw-tahoma",
+  "repository": "https://github.com/mylife-home/mylife-home-core-plugins-hw-tahoma",
   "author": "Vincent Trumpff",
   "dependencies": {
     "async": "^2.3.0",
